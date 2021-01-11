@@ -6,7 +6,7 @@
 body{
     
     font-family: Arial, Helvetica, sans-serif;
-    background:#f1f1f1
+    background:black
     ;
 }
 #anim-box{
@@ -28,7 +28,7 @@ body{
     text-align: center;
 }
 .rect{
-    background: #333333;
+    background: white;
     display: inline-block;
     height: 60px;
     width: 6px;
@@ -64,4 +64,52 @@ body{
 }
 #rect5{
     animation-delay: -0.7s;
+}
+/* test */
+p{
+   display: inline;
+   margin-top: 60px;
+   padding: 50%;
+   font-size: 20px;
+   color: white;
+   animation: flash 1.4s linear infinite;
+}
+
+@keyframes flash{
+    0%{
+        color: #484848;
+        text-shadow: none
+    }
+    90%{
+        color: #484848 ;
+        text-shadow: none;
+    }
+    100%{
+        color: white;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+}
+#p1{
+    animation-delay: 0.1s;
+}
+#p2{
+    animation-delay: 0.2s;
+}
+#p3{
+    animation-delay: 0.3s;
+}
+#p4{
+    animation-delay: 0.4s;
+}
+#p5{
+    animation-delay:0.5s ;
+}
+#p6{
+    animation-delay: 0.6s;
+}
+#p7{
+    animation-delay: 0.7s;
+}
+#p8{
+    animation-delay: 0.8s;
 }
