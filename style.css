@@ -21,7 +21,7 @@ body{
     width: 100px;
     height: 50px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     /* background: orange; */
@@ -112,4 +112,40 @@ p{
 }
 #p8{
     animation-delay: 0.8s;
+}
+/* test button */
+
+/* button{
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: 47%;
+
+}
+/* a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 20px;
+} */ 
+#aback{
+    text-decoration: none;
+    color: white;
+    font-size: 100px;
+    position: relative;
+    
+}
+
+/* test underligne */
+a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0px;
+    margin: 5px auto 0 auto;
+    height: 2px;
+    border-radius: 2px;
+    background: white;
+    transition: width 0.3s ease-out;
+}
+a:hover::after{
+    width: 100%;
 }
